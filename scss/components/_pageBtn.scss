@@ -1,0 +1,39 @@
+.btn {
+	position: relative;
+	padding: 15px 0;
+	width: 180px;
+	color: #fff;
+	background-color: #f33c7a;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	@include font-size(18);
+	letter-spacing: 1px;
+	font-family: 'proxima', Arial, Helvetica, sans-serif;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, .3);
+	z-index: 1;
+	overflow: hidden;
+	transition: .3s ease-in;
+
+	&:hover {
+		letter-spacing: 3px;
+	}
+
+	&::before {
+		@include pseudo;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: linear-gradient(to left, rgba(255, 255, 255, .4),
+		transparent);
+		transform: skewX(45deg) translateX(-150%);
+		transition: transform .3s ease-in;
+	}
+
+	&:hover::before {
+		transform: skewX(45deg) translateX(200%);
+	}
+}
+

@@ -1,0 +1,12 @@
+@import '../helpers/mixin';
+
+@include font-face(
+  'proxima',
+  '../fonts/ProximaNova/ProximaNova-Regular/ProximaNova-Regular'
+);
+
+@include font-face(
+  'proxima',
+  '../fonts/ProximaNova/ProximaNova-Bold/ProximaNova-Bold',
+  bold
+);
