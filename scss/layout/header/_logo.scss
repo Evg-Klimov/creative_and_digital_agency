@@ -1,0 +1,8 @@
+.logo {
+	&__link {
+		@include font-size(18);
+		text-transform: uppercase;
+		color: #e3d5ff;
+		font-weight: bold;
+	}
+}

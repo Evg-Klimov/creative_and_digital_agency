@@ -1,0 +1,33 @@
+.nav {
+	position: relative;
+	max-width: 640px;
+	width: 100%;
+}
+
+.nav-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	&__link {
+		color: #e3d5ff;
+		@include font-size(14);
+		text-transform: uppercase;
+		position: relative;
+
+		&:hover::before {
+			width: 50%;
+		}
+
+		&::before {
+			@include pseudo;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: width .2s linear;
+			width: 0;
+			height: 1px;
+			background-color: red;
+		}
+	}
+}
