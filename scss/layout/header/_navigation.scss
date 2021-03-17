@@ -1,13 +1,8 @@
-.nav {
-	position: relative;
-	max-width: 640px;
-	width: 100%;
-}
-
 .nav-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 640px;
 	
 	&__link {
 		color: #e3d5ff;
@@ -30,4 +25,40 @@
 			background-color: red;
 		}
 	}
+
+	@media all and (max-width: 1024px) {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: #705096;
+		height: 60vh;
+		transform: translateX(105%);
+		transition: transform .4s ease;
+		width: 100%;
+		padding: 20px 10px;
+		flex-direction: column;
+
+		&-active {
+			transform: translateX(0%);
+			transition: transform .4s ease;
+		}
+	}
+
+	&__item {
+		@media all and (max-width: 1024px) {
+				opacity: 0;
+		}
+	}
 }
+
+	@keyframes navLinkFade {
+		from {
+			opacity: 0;
+			transform: translateX(50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateX(0px);
+		}
+	}
+
