@@ -1,7 +1,12 @@
 .header-outer {
-	background:url('../img/Banner_bg.png') no-repeat top 0px right 30%, 
+	background:url('../img/Banner_bg.png') no-repeat top 0px right 30%/contain, 
 						 url('../img/Banner_bg_light.png') no-repeat center/cover;
 	padding-top: 60px;
 	padding-bottom: 260px;
 	overflow: hidden;
+
+	@media all and (max-width: 1024px) {
+		padding-top: 30px;
+		padding-bottom: 130px;
+	}
 }

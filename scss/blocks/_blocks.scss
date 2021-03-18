@@ -1,5 +1,9 @@
 .banner {
 
+	@media all and (max-width: 1024px) {
+		text-align: center;
+	}
+
 	&__title {
 		@include font-size(70);
 		text-transform: uppercase;
@@ -8,6 +12,15 @@
 		line-height: 1.1;
 		margin-top: 0;
 		margin-bottom: 35px;
+
+		@media all and (max-width: 1024px) {
+			@include font-size(50);
+			max-width: 100%;
+		}
+
+		@media all and (max-width: 425px) {
+			@include font-size(35);
+		}
 
 		&--thin {
 			font-weight: 300;
@@ -24,6 +37,21 @@
 		margin-top: 0;
 		margin-bottom: 50px;
 		max-width: 490px;
+
+		@media all and (max-width: 1024px) {
+			max-width: 100%;
+		}
+
+		@media all and (max-width: 425px) {
+			@include font-size(14);
+		}
+	}
+
+	&__btn {
+		@media all and (max-width: 425px) {
+			@include font-size(14);
+			width: 130px;
+		}
 	}
 }
 

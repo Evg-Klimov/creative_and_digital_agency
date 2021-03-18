@@ -31,12 +31,13 @@
 		top: 100%;
 		left: 0;
 		background-color: #705096;
-		height: 60vh;
+		height: 100vh;
 		transform: translateX(105%);
 		transition: transform .4s ease;
 		width: 100%;
 		padding: 20px 10px;
 		flex-direction: column;
+		z-index: 20;
 
 		&-active {
 			transform: translateX(0%);
