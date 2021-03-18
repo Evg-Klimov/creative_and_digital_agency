@@ -16,7 +16,8 @@
 	overflow: hidden;
 	transition: .3s ease-in;
 
-	&:hover {
+	&:hover,
+	&:focus {
 		letter-spacing: 3px;
 	}
 
@@ -32,8 +33,19 @@
 		transition: transform .3s ease-in;
 	}
 
-	&:hover::before {
+	&:hover::before,
+	&:focus::before {
 		transform: skewX(45deg) translateX(200%);
 	}
 }
+
+.btn-transparent {
+	border: 1px solid rgb(227, 213, 255);
+	border-radius: 10px;
+	color: #fff;
+	font-size: 19px;
+	text-transform: uppercase;
+}
+
+
 

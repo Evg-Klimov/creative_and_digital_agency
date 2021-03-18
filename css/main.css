@@ -65,7 +65,7 @@
   z-index: 1;
   overflow: hidden;
   transition: .3s ease-in; }
-  .btn:hover {
+  .btn:hover, .btn:focus {
     letter-spacing: 3px; }
   .btn::before {
     content: "";
@@ -78,8 +78,15 @@
     background: linear-gradient(to left, rgba(255, 255, 255, 0.4), transparent);
     transform: skewX(45deg) translateX(-150%);
     transition: transform .3s ease-in; }
-  .btn:hover::before {
+  .btn:hover::before, .btn:focus::before {
     transform: skewX(45deg) translateX(200%); }
+
+.btn-transparent {
+  border: 1px solid #e3d5ff;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 19px;
+  text-transform: uppercase; }
 
 .wrapper-menu {
   width: 30px;
@@ -121,9 +128,9 @@
   transform: rotate(-90deg) translateX(-3px); }
 
 .header-outer {
-  background: url("../img/Banner_bg_light.png") no-repeat center/cover;
+  background: url("../img/Banner_bg.png") no-repeat top 0px right 30%, url("../img/Banner_bg_light.png") no-repeat center/cover;
   padding-top: 60px;
-  padding-bottom: 350px;
+  padding-bottom: 260px;
   overflow: hidden; }
 
 .header {
@@ -132,7 +139,8 @@
   justify-content: space-between;
   position: relative;
   border-bottom: 1px solid #705096;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  margin-bottom: 200px; }
 
 .logo__link {
   font-size: 1.125rem;
@@ -197,3 +205,23 @@
   to {
     opacity: 1;
     transform: translateX(0px); } }
+
+.banner__title {
+  font-size: 4.375rem;
+  text-transform: uppercase;
+  color: #e3d5ff;
+  max-width: 670px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 35px; }
+  .banner__title--thin {
+    font-weight: 300; }
+  .banner__title--color {
+    color: #f33c7a; }
+
+.banner__description {
+  font-size: 1.125rem;
+  color: #e3d5ff;
+  margin-top: 0;
+  margin-bottom: 50px;
+  max-width: 490px; }
