@@ -3,7 +3,7 @@
 						 url('../img/Banner_bg_light.png') no-repeat center/cover;
 	padding-top: 60px;
 	padding-bottom: 260px;
-	overflow: hidden;
+	overflow-x: hidden;
 
 	@media all and (max-width: 1024px) {
 		padding-top: 30px;

@@ -40,3 +40,19 @@
 	height: auto;
 	display: block;
 }
+
+.mainBlocksTitle {
+	text-transform: uppercase;
+	@include font-size(38);
+	color: #e3d5ff;
+	margin: 0;
+	text-align: center;
+}
+
+.mainDescriptionBlocks {
+	color: #826ba9;
+  line-height: 1.2;
+	margin: 0;
+}
+
+
